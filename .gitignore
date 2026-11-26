@@ -1,0 +1,41 @@
+# environments and dependencies
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+.env
+
+# MRI data, checkpoints, generated outputs (never commit patient data or weights)
+*.nii
+*.nii.gz
+*.pt
+*.pth
+*.ckpt
+model_artifacts/*
+!model_artifacts/README.md
+data/uploads/*
+data/processed/*
+data/samples/*
+!data/samples/README.md
+!data/samples/DEMO-MNI152-simulated/
+!data/samples/DEMO-MNI152-simulated/**
+!assets/mni152/*.nii.gz
+data/valdo/*
+!data/valdo/README.md
+data/processed/*
+results/*
+!results/README.md
+downloads/
+data/*.db
+reports/*
+!**/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
